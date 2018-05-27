@@ -62,8 +62,9 @@
         </div>
       </div>
       <div class="row">
+
         <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1" (click)="openModal()">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
                 <i class="fa fa-plus fa-3x"></i>
@@ -76,6 +77,7 @@
             <p class="text-muted">Illustration</p>
           </div>
         </div>
+
         <div class="col-md-4 col-sm-6 portfolio-item">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
             <div class="portfolio-hover">
@@ -460,7 +462,7 @@
                   <li>Client: Threads</li>
                   <li>Category: Illustration</li>
                 </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                <button (click)="lgModal.hide()" class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fa fa-times"></i>
                   Close Project</button>
               </div>
@@ -641,18 +643,18 @@
     </div>
   </div>
 
-  <!-- Bootstrap core JavaScript 
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
-  Plugin JavaScript 
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="../../node_modules/jquery-easing/dist/jquery.easing.1.3.umd.min.js"></script>
 
-  Contact form JavaScript 
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
+  <!-- Contact form JavaScript -->
+  <script src="../assets/js/jqBootstrapValidation.js"></script>
+  <script src="../assets/js/contact_me.js"></script>
 
-  Custom scripts for this template 
-  <script src="js/agency.min.js"></script> -->
+  <!-- Custom scripts for this template -->
+  <script src="../assets/js/larabeli.min.js"></script> -->
 
 </body>
