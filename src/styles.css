@@ -238,7 +238,7 @@
   #portfolio .portfolio-item .portfolio-link {
     position: relative;
     display: block;
-    max-width: 400px;
+    max-width: 500px;
     margin: 0 auto;
     cursor: pointer;
   }
@@ -279,7 +279,7 @@
   }
   
   #portfolio .portfolio-item .portfolio-caption {
-    max-width: 400px;
+    max-width: 500px;
     margin: 0 auto;
     padding: 25px;
     text-align: center;
@@ -697,5 +697,11 @@
   
   ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
     background-color: #fed136;
+  }
+
+  .img-modal{
+    width: 70%;
+    height: 220px;
+    object-fit: cover;
   }
   
