@@ -1,20 +1,35 @@
+import { BsModalRef } from 'ngx-bootstrap/modal/bs-modal-ref.service';
+import { BsModalService, ModalModule } from 'ngx-bootstrap/modal';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
 import { MenuComponent } from './menu/menu.component';
+import { ServiceComponent } from './service/service.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ModalComponent } from './modal/modal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent
+    MenuComponent,
+    HeaderComponent,
+    ServiceComponent,
+    PortfolioComponent,
+    ModalComponent
   ],
   imports: [
-    NgbModule.forRoot(),
+    ModalModule.forRoot(),
     BrowserModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    BsModalService,
+    BsModalRef
+  ],
+  bootstrap: [AppComponent],
+  entryComponents: [
+    ModalComponent,
+  ]
 })
 export class AppModule { }
