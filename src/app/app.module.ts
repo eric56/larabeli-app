@@ -9,6 +9,10 @@ import { MenuComponent } from './menu/menu.component';
 import { ServiceComponent } from './service/service.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ModalComponent } from './modal/modal.component';
+import { AboutComponent } from './about/about.component';
+import { SocialNetworkComponent } from './social-network/social-network.component';
+import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +21,11 @@ import { ModalComponent } from './modal/modal.component';
     HeaderComponent,
     ServiceComponent,
     PortfolioComponent,
-    ModalComponent
+    ModalComponent,
+    AboutComponent,
+    SocialNetworkComponent,
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     ModalModule.forRoot(),
